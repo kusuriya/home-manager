@@ -55,6 +55,9 @@
     yt-dlp
   ];
   services = {
+    syncthing = {
+      enable = true;
+    };
     ssh-agent.enable = true;
     kdeconnect.enable = true;
     emacs = {
