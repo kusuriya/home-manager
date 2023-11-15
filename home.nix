@@ -53,14 +53,6 @@
     virt-viewer
     intel-gpu-tools
     yt-dlp
-    obs-studio
-            ( wrapOBS.override { obs-studio = pkgs.obs-studio; } {
-                plugins = with pkgs.obs-studio-plugins; [
-                    obs-move-transition
-                    obs-vkcapture
-                ];
-            } )
-
   ];
   services = {
     ssh-agent.enable = true;
